@@ -1,0 +1,47 @@
+.pageheader {
+  height: 355px;
+  border-bottom: none;
+  position: relative;
+  margin-bottom: 0;
+
+  > img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    -webkit-filter: brightness(0.6);
+    filter: brightness(0.6);
+    width: 100%;
+    position: relative;
+  }
+
+  .pageheader-title-container {
+    position: absolute;
+    top: 25%;
+    width: 60%;
+    margin-left: 30px;
+  }
+
+  .progress-container {
+    background-color: rgba($brand-inverse, 0.8) !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pageheader {
+    height: 500px;
+
+    > img {
+      height: 100%;
+    }
+  }
+}
+
+@media (min-width: $screen-md) {
+  .pageheader {
+    .progress-container {
+      span {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}

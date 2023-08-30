@@ -1,0 +1,24 @@
+/// The variables below are referencing Atlas UI variables.
+/// Either let Atlas set the values or override them here.
+
+$mxappswitcher-main-bg-color: $navsidebar-bg;
+$mxappswitcher-main-bg-color-hover: $navsidebar-bg-hover;
+$mxappswitcher-second-bg-color: $navtopbar-bg;
+$mxappswitcher-second-bg-color-hover: $navtopbar-bg-hover;
+$mxappswitcher-main-font-color: $navsidebar-color;
+$mxappswitcher-second-font-color: $navsidebar-sub-color;
+$mxappswitcher-border-radius: $border-radius-default;
+$mxappswitcher-border-radius-form-input: $form-input-border-radius;
+$mxappswitcher-font-size: $font-size-default;
+$mxappswitcher-font-size-large: 16px;
+$mxappswitcher-font-size-title: $font-size-h4;
+$mxappswitcher-icon-color: $navsidebar-color;
+$mxappswitcher-placeholder-color: transparentize($mxappswitcher-second-font-color, 0.5);
+$mxappswitcher-scrollbar-color: transparentize(#fff, 0.7);
+$mxappswitcher-scrollbar-hover-color: transparentize(#fff, 0.6);
+$mxappswitcher-scrollbar-container-color: transparentize(#fff, 0.85);
+$mxappswitcher-panel-distance: 2px;
+$mxappswitcher-panel-width: 280px;
+$mxappswitcher-sidebar-width: 320px;
+$mxappswitcher-panel-z-index: 2;
+$mxappswitcher-breakpoint: $screen-xs;

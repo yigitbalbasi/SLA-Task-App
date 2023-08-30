@@ -1,0 +1,57 @@
+.mxappswitcher {
+  $scope: &;
+  .mxappswitcher-list {
+    &,
+    #{$scope}-skeleton-loader {
+      flex: 1;
+      padding: 8px 16px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: $mxappswitcher-main-bg-color $mxappswitcher-second-bg-color;
+
+      &::-webkit-scrollbar {
+        background-color: $mxappswitcher-scrollbar-container-color;
+        width: 8px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $mxappswitcher-scrollbar-color;
+        border-radius: 9999px;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: $mxappswitcher-scrollbar-hover-color;
+      }
+    }
+
+    &__title-wrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    &__title {
+      font-size: $mxappswitcher-font-size-title;
+      font-weight: 600;
+      display: block;
+    }
+
+    &__refresh-button {
+      border: 0;
+      background: none;
+      display: flex;
+      align-items: center;
+
+      &--disabled {
+        opacity: 0.4;
+      }
+    }
+
+    &__refresh-button-icon {
+      color: $mxappswitcher-icon-color;
+      height: 20px;
+      width: 20px;
+    }
+  }
+}

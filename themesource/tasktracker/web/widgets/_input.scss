@@ -1,0 +1,83 @@
+$component: ".option";
+$element: "wrapper";
+
+#{$component} {
+  position: relative;
+
+  &-#{$element} {
+    border: 2px solid $form-input-border-color;
+    border-radius: $border-radius-default;
+    height: 72px;
+    width: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    z-index: 1;
+
+    &:focus {
+      border-color: $brand-inverse;
+    }
+  }
+
+  &-select {
+    height: 100%;
+    width: 100%;
+    background: $brand-default;
+    position: absolute;
+    border-radius: $border-radius-small;
+
+    & + #{$component}-#{$element} {
+      border-color: $brand-inverse;
+    }
+  }
+
+  &-icon {
+    position: relative;
+    cursor: pointer;
+    padding: 20px;
+  }
+
+  &-label {
+    margin-top: 5px;
+    display: component;
+    text-align: center;
+    color: $brand-inverse;
+  }
+
+  &.brand-primary {
+    #{$component}-select {
+      background: $brand-primary;
+    }
+  }
+
+  &.brand-inverse {
+    #{$component}-select {
+      background: $brand-inverse;
+    }
+  }
+
+  &.brand-info {
+    #{$component}-select {
+      background: $brand-info;
+    }
+  }
+
+  &.brand-danger {
+    #{$component}-select {
+      background: $brand-danger;
+    }
+  }
+
+  &.brand-warning {
+    #{$component}-select {
+      background: $brand-warning;
+    }
+  }
+
+  &.brand-success {
+    #{$component}-select {
+      background: $brand-success;
+    }
+  }
+}

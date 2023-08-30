@@ -1,0 +1,19 @@
+.mxappswitcher {
+  .mxappswitcher-toggle {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: 0;
+    background: $mxappswitcher-second-bg-color;
+    border-radius: $btn-border-radius;
+
+    &:hover {
+      background: $mxappswitcher-second-bg-color-hover;
+    }
+
+    &__icon {
+      color: $mxappswitcher-icon-color;
+    }
+  }
+}

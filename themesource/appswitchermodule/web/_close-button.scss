@@ -1,0 +1,23 @@
+.mxappswitcher {
+  .mxappswitcher-close-button {
+    display: none;
+    background-color: transparent;
+    border: 0;
+    align-items: center;
+    font-size: $mxappswitcher-font-size-large;
+    font-weight: 300;
+    padding: 0;
+    margin: 12px 16px 2px;
+
+    @media (max-width: $mxappswitcher-breakpoint) {
+      display: flex;
+      gap: 4px;
+    }
+
+    &__icon {
+      color: $mxappswitcher-icon-color;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

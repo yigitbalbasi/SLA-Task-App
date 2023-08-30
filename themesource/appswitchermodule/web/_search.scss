@@ -1,0 +1,35 @@
+.mxappswitcher {
+  .mxappswitcher-search {
+    position: relative;
+    margin: 16px;
+    margin-bottom: 8px;
+
+    &__input {
+      height: 40px;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 0;
+      border-radius: $mxappswitcher-border-radius-form-input;
+      padding: 8px 32px 8px 12px;
+      color: $mxappswitcher-second-font-color;
+
+      &:focus {
+        outline: 2px solid white;
+      }
+
+      &::placeholder {
+        color: $mxappswitcher-placeholder-color;
+      }
+    }
+
+    &__icon {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 24px;
+      height: 24px;
+      transform: translate(-8px, -50%);
+      color: transparentize($mxappswitcher-icon-color, 0.5);
+    }
+  }
+}

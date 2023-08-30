@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "2.2",
+  "appName": "SLA Task App",
+  "published": [
+    {
+      "name": "NotifyRolesChangedAPI",
+      "version": "1.0.0",
+      "path": "mendixsso-api/notifyroleschanged/v1",
+      "description": "This API operation is called by the Mendix platform when you change a user's app roles from the platform. It only notifies your app that a specific user's app roles have to be retrieved again from the Mendix platform, after which your app will call the AppRolesAPI.",
+      "serviceType": "REST",
+      "contracts": [
+        {
+          "type": "OpenAPI 2.0",
+          "value": "{\"swagger\":\"2.0\",\"info\":{\"title\":\"NotifyRolesChangedAPI\",\"description\":\"This API operation is called by the Mendix platform when you change a user's app roles from the platform. It only notifies your app that a specific user's app roles have to be retrieved again from the Mendix platform, after which your app will call the AppRolesAPI.\",\"version\":\"1.0.0\"},\"host\":\"{host}\",\"basePath\":\"/mendixsso-api/notifyroleschanged/v1\",\"schemes\":[\"{scheme}\"],\"paths\":{\"/user/{uuid}\":{\"get\":{\"tags\":[\"user\"],\"parameters\":[{\"name\":\"uuid\",\"in\":\"path\",\"required\":true,\"type\":\"string\"}],\"responses\":{\"200\":{\"description\":\"successful operation\"}}}}},\"tags\":[{\"name\":\"user\",\"description\":\"\"}]}"
+        }
+      ],
+      "security": {
+        "types": [
+          {
+            "type": "None"
+          }
+        ],
+        "allowedRoles": []
+      }
+    }
+  ],
+  "consumed": []
+}

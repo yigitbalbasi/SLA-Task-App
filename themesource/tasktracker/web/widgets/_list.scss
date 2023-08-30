@@ -1,0 +1,7 @@
+.listview-empty {
+  > ul {
+    > .mx-listview-empty {
+      display: none;
+    }
+  }
+}

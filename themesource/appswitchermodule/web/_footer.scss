@@ -1,0 +1,27 @@
+.mxappswitcher {
+  .mxappswitcher-footer {
+    $block: &;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $mxappswitcher-second-bg-color;
+    padding: 16px;
+    gap: 8px;
+
+    &__logo {
+      width: 24px;
+      height: 24px;
+    }
+
+    &__details {
+      margin-bottom: 0;
+      font-size: 12px;
+      line-height: 1.25em;
+    }
+
+    &__link {
+      color: $mxappswitcher-main-font-color;
+      text-decoration: underline;
+    }
+  }
+}
